@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/endSide"
+        android:text="name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/endSide"
+        android:text="company"
+        android:textColor="@color/grey"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/endSide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true">
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/star"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@color/white"
+            android:src="@drawable/star" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/star"
+            android:layout_centerHorizontal="true"
+            android:text="time"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Search Keyword"
+        android:layout_toStartOf="@+id/search"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:paddingStart="16dp"
+        android:singleLine="true"
+        android:background="@color/transparent"/>
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/search"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/magnify"
+        android:background="@color/transparent"
+        android:tint="@color/colorPrimary"
+        android:layout_alignParentEnd="true"/>
+
+    <View
+        android:layout_below="@+id/search"
+        android:id="@+id/border"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/lightGrey"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:textColor="@color/grey"
+        android:layout_centerInParent="true"
+        android:textSize="14sp" />
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/progress"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/border"/>
+
+</RelativeLayout>

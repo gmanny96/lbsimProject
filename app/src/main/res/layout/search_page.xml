@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:hint="Search Keyword, tag, company etc"
+        android:layout_toStartOf="@+id/search"
+        android:textColor="@color/white"
+        android:textColorHint="@color/lightGrey"
+        android:paddingStart="16dp"
+        android:singleLine="true"
+        android:cursorVisible="true"/>
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/search"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/magnify"
+        android:background="@color/colorPrimary"
+        android:tint="@color/white"
+        android:layout_alignParentEnd="true"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabs"/>
+
+</RelativeLayout>

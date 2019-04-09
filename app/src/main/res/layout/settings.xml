@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/lightGrey">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Settings"
+        android:id="@+id/bar"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@color/white"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_marginTop="16dp"
+        android:id="@+id/editProfile"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/bar"
+        android:text="Edit Profile"
+        android:background="@color/white"
+        android:textSize="16sp"
+        android:textAlignment="textStart"
+        android:padding="16dp"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/editTags"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/editProfile"
+        android:text="Edit Tags"
+        android:background="@color/white"
+        android:textSize="16sp"
+        android:textAlignment="textStart"
+        android:padding="16dp"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/addedJobs"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/editTags"
+        android:text="Added Jobs"
+        android:background="@color/white"
+        android:textSize="16sp"
+        android:textAlignment="textStart"
+        android:padding="16dp"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_marginTop="16dp"
+        android:id="@+id/aboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/addedJobs"
+        android:text="About Us"
+        android:background="@color/white"
+        android:textSize="16sp"
+        android:textAlignment="textStart"
+        android:padding="16dp"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/signOut"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Sign Out"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:textSize="16sp"
+        android:layout_below="@+id/aboutUs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+</RelativeLayout>

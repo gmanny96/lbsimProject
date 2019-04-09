@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">lbsimProject</string>
+    <string name="individual">Individual</string>
+    <string name="ngo">Ngo</string>
+    <string name="company">Company</string>
+    <string name="LoginAs">Login as.?</string>
+    <string name="welcome_to_welcome_page_guys">Welcome to welcome page guys</string>
+    <string name="title_activity_welcome">welcomeActivity</string>
+</resources>

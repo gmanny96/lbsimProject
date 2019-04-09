@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Edit Profile"
+        android:id="@+id/bar"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/arrow_left"
+        android:background="@color/colorAccent"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_centerHorizontal="true"
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/lightGrey"
+        android:layout_below="@+id/bar"
+        android:ems="20"
+        android:inputType="textPersonName"
+        android:hint="Name" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_centerHorizontal="true"
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/lightGrey"
+        android:layout_below="@+id/name"
+        android:ems="20"
+        android:inputType="textPersonName"
+        android:hint="Name" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:text="Delete Account"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"
+        android:background="@color/lightGrey"
+        android:textAlignment="textStart"
+        android:id="@+id/deleteAccount"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:fabSize="normal"
+        android:src="@drawable/check"
+        android:layout_margin="16sp"
+        android:background="@color/transparent"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

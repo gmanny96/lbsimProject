@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_centerHorizontal="true"
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="15"
+        android:padding="16dp"
+        android:background="@color/lightGrey"
+        android:textAlignment="center"
+        android:hint="Name" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_centerHorizontal="true"
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:ems="30"
+        android:padding="16dp"
+        android:background="@color/lightGrey"
+        android:textAlignment="center"
+        android:hint="Address" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:visibility="invisible"
+        android:id="@+id/progress"/>
+
+    <Button
+        android:id="@+id/cont"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="50dp"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:text="Continue"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
